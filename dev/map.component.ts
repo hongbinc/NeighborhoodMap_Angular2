@@ -8,11 +8,11 @@ import { GoogleMapsWrapper } from './google.maps.wrapper';
 
 export class MapComponent {
 
-	Map: any = null;
+	Map:any = null;
 	Marker: any;
 
-	constructor(private mWrapper: GoogleMapsWrapper) { }
-
+	constructor(private mWrapper: GoogleMapsWrapper){}
+	
 	ngOnInit() {
 		// var self = this;
 		this.mWrapper.GoogleMapsAPI.then(tGoogleMaps => {
@@ -41,10 +41,10 @@ export class MapComponent {
 			// 			}
 			// 		});
 			// }
-		});
+		 });
 	}
 
-	ngOnChanges() { }
+	ngOnChanges(){}
 
 	// addMarker(tGoogleMaps, model) {
 	// 	if (this.Map) {
