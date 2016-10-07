@@ -1,26 +1,17 @@
-﻿<h2 class="text-center">Agent Helper</h2>
-<hr/>
-<form class="form-inline">
-	<div class="form-group">
-		<input class="form-control" type="text" [readonly]="isNameEditable" [(ngModel)]="agentName" />
+﻿
+<div class="showbox">
+	<div class="input-group">
+		<input class="form-control" placeholder="Neighborhood">
+		<input class="form-control" placeholder="Popular places">
+		<input class="form-control" placeholder="Filter by...">
+		<button class="btn btn-default button-control">Search</button>
+		<button class="btn btn-default button-control listhide">Show List</button>
 	</div>
-	<div class="form-group">
-		<button class="btn btn-primary" (click)="isNameEditable = !isNameEditable;">{{!isNameEditable ? 'Save' : 'Edit'}}</button>
+	<div class="PlaceDisplay">
+		<!-- Content display -->
 	</div>
-</form>
+</div>
 
-<form class="form-inline">
-	<div class="form-group">
-	<input type="text" #name class="form-control" placeholder="Name"/>
-	</div>
-	<div class="form-group">
-	<input type="text" #address class="form-control" placeholder="Address" />
-	</div>
-	<div class="form-group">
-	<button class="btn btn-primary" (newListing)='newListingAdded($event)' (click)="addListing(name, address)">Add Listing</button>
-	</div>
-</form>
-
-<my-listing [listings]='listings'></my-listing>
+<!--<my-listing [listings]='listings'></my-listing>-->
 
 <my-map [model]='currentListing' [listings]='listings'></my-map>

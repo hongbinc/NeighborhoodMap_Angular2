@@ -1,6 +1,161 @@
-body {
-	margin: 5%;
+/* Generic Styles */
+.showbox {
+    position: absolute;
+    z-index: 100;
+    padding-top: 20px;
+    padding-left: 5px;
 }
+
+body {
+    margin: 0px;
+}
+
 #map-container {
-	height: 400px;
+    width: 100%;
+    height: 100%;
+}
+
+.form-control {
+    width: 162px !important;
+    margin-right: 3px;
+}
+
+.PlaceDisplay {
+    max-width: 400px;
+    max-height: 500px;
+    overflow: auto;
+    margin-top: 5px;
+    border-radius: 3px;
+    z-index: 100;
+    position: fixed;
+    background-color: #FFFFFF;
+}
+.loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('../images/page-loader.gif') 50% 50% no-repeat rgb(249,249,249);
+    background-color: #fff;
+}
+.placedetail {
+    padding-left: 15px;
+    padding-right: 10px;
+    font-family: Cambria;
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: solid 1px;
+    border-bottom-color: #eae7e1;
+}
+.error {
+    color:#eae7e1;
+}
+.singleplace:hover {
+    background-color: #ffd27e;
+    cursor: pointer;
+}
+
+.city {
+    font-family: Cambria;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: solid 1px;
+    border-bottom-color: #686161;
+    padding-bottom: 10px;
+}
+
+.venue_name {
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+.venue-name {
+    font-family: Georgia;
+    font-size: 15px;
+}
+
+.badge {
+    background-color: orange;
+}
+
+.venue_category {
+    font-size: 20px;
+}
+
+.ratesize {
+    font-size: 15px;
+}
+
+.rate_position {
+    display: inline;
+    padding-left: 10px;
+}
+.tips {
+    font-weight:bold;
+}
+.PlaceDisplay::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+    outline: 1px solid slategrey;
+}
+
+.PlaceDisplay::-webkit-scrollbar {
+    width: 1em;
+}
+
+.PlaceDisplay::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+@media only screen and (min-width:1280px) {
+    .listhide {
+        display: none;
+    }
+}
+/*  Medium Devices */
+@media screen and (min-width:420px) and (max-width:1200px) {
+    .PlaceDisplay {
+        display:none;
+    }
+    .button-control {
+        width: 79px !important;
+        margin-right: 3px;
+    }
+
+    .form-control {
+        margin-bottom: 3px !important;
+    }
+}
+/* iPhone 6 and iPhone 6 plus */
+@media screen and (min-width:339px) and (max-width:416px) {
+    .PlaceDisplay {
+        display:none;
+    }
+    .button-control {
+        width: 79px !important;
+        margin-right: 3px;
+        margin-top: 3px;
+    }
+
+    .form-control {
+        margin-bottom: 3px !important;
+    }
+}
+
+/* Extra small devices  */
+@media only screen and (min-width:252px) and (max-width:339px){
+    .PlaceDisplay {
+        display:none;
+    }
+    .button-control {
+        width: 79px !important;
+        margin-right: 3px;
+        margin-bottom: 3px;
+    }
+    .form-control {
+        margin-bottom: 3px !important;
+    }
+
 }
