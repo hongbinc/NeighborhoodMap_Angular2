@@ -13,9 +13,9 @@ export class MapSearchField {
     @Input() keyword: string;
     @Input() filterword: string;
 
-
+    Lat: string;
+    Lng: string;
     getGeocode() {
-
 
         this.mWrapper.GoogleMapsAPI.then(tGoogleMaps => {
 
@@ -24,6 +24,9 @@ export class MapSearchField {
                 (tResults, tStatus) => {
                     if (tStatus === tGoogleMaps.GeocoderStatus.OK) {
                         var location = tResults[0].geometry.location;
+                        this.Lat = location.lat();
+                        this.Lng = location.lng();
+                        console.log(this.Lat,this.Lng);
                         // get neighborhood geocode    
                     }
                 });

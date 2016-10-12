@@ -9,14 +9,14 @@ export class FoursquareDataService {
     public LoadFourSquare() {
         //Create Foursquare API data URL
         
-        var url_prefix = 'https://api.foursquare.com/v2/venues/explore?client_id=';
-        var client_id = '1I25VINMXH4AXMWCEUDLLBDD0LIWFSBVNXRCM3USQQOBCBSW';
-        var client_secret = '&client_secret=MDMKL344UHNL4NDWGNN5HVQBZEDPWMIUOOGCODYQV5PFTE2R';
-        var version = '&v=20130815&venuePhotos=1';
-        var location = '&ll=' + lat + ',' + lng;
-        var keyword = self.keyword();
-        var search = '&query=' + keyword;
-        var FourSquareURL = url_prefix + client_id + client_secret + version + location + search;
+        // var url_prefix = 'https://api.foursquare.com/v2/venues/explore?client_id=';
+        // var client_id = '1I25VINMXH4AXMWCEUDLLBDD0LIWFSBVNXRCM3USQQOBCBSW';
+        // var client_secret = '&client_secret=MDMKL344UHNL4NDWGNN5HVQBZEDPWMIUOOGCODYQV5PFTE2R';
+        // var version = '&v=20130815&venuePhotos=1';
+        // var location = '&ll=' + lat + ',' + lng;
+        // var keyword = self.keyword();
+        // var search = '&query=' + keyword;
+        // var FourSquareURL = url_prefix + client_id + client_secret + version + location + search;
 
 
         // var $APIError = $('#APIError');
